@@ -9,6 +9,8 @@ web/app/uploads/*
 !web/app/mu-plugins/disallow-indexing.php
 !web/app/mu-plugins/register-theme-directory.php
 !web/app/mu-plugins/bedrock-autoloader.php
+!web/app/plugins/roots-share-buttons/*
+web/app/ewww
 
 # WordPress
 web/wp
@@ -34,5 +36,5 @@ node_modules
 bin
 .vagrant
 
-# EWWW plugin support
-ewww
+# Extra junk
+.DS_Store
