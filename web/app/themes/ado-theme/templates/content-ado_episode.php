@@ -1,4 +1,7 @@
 <?php while (have_posts()) : the_post(); ?>
+  <?php if ( function_exists('yoast_breadcrumb') ) {
+      yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+    } ?>
 
   <?php
   $post_id = get_the_ID();
