@@ -37,13 +37,29 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
-    }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "arresteddevops/ado-plugin",
+        "version": "1.2.1",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/arresteddevops/ado-plugin/archive/master.zip"
+        },
+        "require" : {
+          "composer/installers": "*"
+        }
+      }
+    }  
   ],
   "require": {
     "php": ">=5.4",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "1.0.9",
-    "johnpbloch/wordpress": "4.1.1"
+    "johnpbloch/wordpress": "4.1.1",
+    "arresteddevops/ado-plugin": "*"
   },
   "extra": {
     "installer-paths": {
