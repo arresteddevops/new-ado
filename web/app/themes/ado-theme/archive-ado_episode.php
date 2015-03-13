@@ -1,0 +1,1 @@
+<?php get_template_part('templates/content-archive', 'ado_episode'); ?>
