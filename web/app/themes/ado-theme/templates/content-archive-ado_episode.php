@@ -1,6 +1,9 @@
   <?php if ( function_exists('yoast_breadcrumb') ) {
       yoast_breadcrumb('<p id="breadcrumbs">','</p>');
     } ?>
+<!-- trying the wrapper -->
+
+<div id = "list">
 <?php while (have_posts()) : the_post(); ?>
 
   <?php
@@ -17,7 +20,7 @@
   ?>
 
   <article <?php post_class(); ?>>
-  <div class="entry-content">
+  <div class="item">
   <?php the_post_thumbnail('bones-thumb-500-square'); ?>
       <a href="<?php echo get_permalink( $post_id ); ?>"><h2 class="entry-title"><?= $episode_title ?></a></h2>
     
@@ -30,3 +33,4 @@
       </div>
   </article>
 <?php endwhile; ?>
+</div>
