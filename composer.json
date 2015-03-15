@@ -70,7 +70,8 @@
     "wpackagist-plugin/regenerate-thumbnails": "*",
     "wpackagist-plugin/cmb2": "*",
     "wpackagist-plugin/safe-redirect-manager": "*",
-    "wpackagist-plugin/custom-search-plugin": "*"
+    "wpackagist-plugin/custom-search-plugin": "*",
+    "wpackagist-plugin/regenerate-thumbnails": "*"
   },
   "extra": {
     "installer-paths": {

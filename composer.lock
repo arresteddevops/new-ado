@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "da2c7561629ed65a4667246efdd62854",
+    "hash": "38bb4e71d1574ceee0d9919636e3925c",
     "packages": [
         {
             "name": "arresteddevops/ado-plugin",
