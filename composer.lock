@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b19d797fa2b71f4820d90f669b8e8f64",
+    "hash": "da2c7561629ed65a4667246efdd62854",
     "packages": [
         {
             "name": "arresteddevops/ado-plugin",
@@ -338,6 +338,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/cryptx/"
+        },
+        {
+            "name": "wpackagist-plugin/custom-search-plugin",
+            "version": "1.26",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/custom-search-plugin/",
+                "reference": "tags/1.26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-search-plugin.1.26.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-search-plugin/"
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",

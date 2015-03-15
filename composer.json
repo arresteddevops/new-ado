@@ -69,7 +69,8 @@
     "wpackagist-plugin/ewww-image-optimizer": "*",
     "wpackagist-plugin/regenerate-thumbnails": "*",
     "wpackagist-plugin/cmb2": "*",
-    "wpackagist-plugin/safe-redirect-manager": "*"
+    "wpackagist-plugin/safe-redirect-manager": "*",
+    "wpackagist-plugin/custom-search-plugin": "*"
   },
   "extra": {
     "installer-paths": {
