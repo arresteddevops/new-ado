@@ -21,7 +21,9 @@
 
   <article <?php post_class(); ?>>
   <div class="item">
-  <?php the_post_thumbnail('bones-thumb-500-square'); ?>
+  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'episode-archive-thumb' ); ?>
+  <img src = "<?php echo $image[0]; ?>">
+
       <a href="<?php echo get_permalink( $post_id ); ?>"><h2 class="entry-title"><?= $episode_title ?></a></h2>
     
       
