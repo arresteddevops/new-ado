@@ -28,8 +28,12 @@
     
       
       <?php $episode_summary = get_post_meta($post_id, '_cmb2_ado_summary', true); ?>
+      <!--
       <?php $episode_summary = substr($episode_summary, 0, 100); ?>
+      -->
+      <div id="summary">
       <?php echo( $episode_summary ) ; ?>
+      </div>
       <?php echo do_shortcode('[powerpress]'); ?>
 
     
