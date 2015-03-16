@@ -31,3 +31,13 @@ function excerpt_more() {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+/** 
+* Remove additional assets from plugins
+*/ 
+function remove_plugin_assets() {
+  wp_dequeue_style('roots-share-buttons'); // roots-share-buttons/assets/styles/share-buttons.css
+  wp_dequeue_script('roots-share-buttons'); //roots-share-buttons/assets/scripts/share-buttons.js
+}
+
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\remove_plugin_assets');
