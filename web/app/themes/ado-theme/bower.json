@@ -10,7 +10,8 @@
     "modernizr": "2.8.2",
     "jquery": "1.11.2",
     "bootstrap": "3.3.2",
-    "fontawesome": "~4.3.0"
+    "fontawesome": "~4.3.0",
+    "masonry": "~3.2.2"
   },
   "overrides": {
     "modernizr": {
