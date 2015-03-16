@@ -28,8 +28,8 @@
     
       
       <?php $episode_summary = get_post_meta($post_id, '_cmb2_ado_summary', true); ?>
-      <?php echo( wpautop( $episode_summary ) ); ?>
-      <?php echo do_shortcode('[powerpress width=100]'); ?>
+      <?php echo( $episode_summary ) ; ?>
+      <?php echo do_shortcode('[powerpress]'); ?>
 
     
       </div>
