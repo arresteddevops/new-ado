@@ -4,11 +4,18 @@
       "files": [
         "scripts/main.js"
       ],
+      "vendor": [
+        "../../plugins/roots-share-buttons/assets/scripts/share-buttons.js"
+      ],
       "main": true
     },
     "main.css": {
       "files": [
         "styles/main.less"
+      ],
+      "vendor": [
+        "../../plugins/roots-share-buttons/assets/styles/share-buttons.css",
+        "../../plugins/wp-biographia/css/wp-biographia.css"
       ],
       "main": true
     },
@@ -25,6 +32,6 @@
     }
   },
   "config": {
-    "devUrl": "example.dev"
+    "devUrl": "ado.dev"
   }
 }
