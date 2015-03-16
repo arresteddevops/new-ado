@@ -2,7 +2,8 @@
   "dependencies": {
     "main.js": {
       "files": [
-        "scripts/main.js"
+        "scripts/main.js",
+        "scripts/grid.js"
       ],
       "vendor": [
         "../../plugins/roots-share-buttons/assets/scripts/share-buttons.js"
