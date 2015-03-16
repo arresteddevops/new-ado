@@ -16,7 +16,7 @@
       ],
       "vendor": [
         "../../plugins/roots-share-buttons/assets/styles/share-buttons.css",
-        "../../plugins/wp-biographia/css/wp-biographia.css"
+        "../../plugins/wp-biographia/css/wp-biographia-min.css"
       ],
       "main": true
     },
