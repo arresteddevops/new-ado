@@ -38,6 +38,8 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 function remove_plugin_assets() {
   wp_dequeue_style('roots-share-buttons'); // roots-share-buttons/assets/styles/share-buttons.css
   wp_dequeue_script('roots-share-buttons'); //roots-share-buttons/assets/scripts/share-buttons.js
+  wp_enqueue_style('wp-biographia', '/app/plugins/wp-biographia/css/wp-biographia.css', array(), NULL);
+  wp_dequeue_style('wp-biographia'); //wp-biographia/css/wp-biographia.css
 }
 
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\remove_plugin_assets');

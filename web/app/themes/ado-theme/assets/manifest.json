@@ -14,7 +14,8 @@
         "styles/main.less"
       ],
       "vendor": [
-        "../../plugins/roots-share-buttons/assets/styles/share-buttons.css"
+        "../../plugins/roots-share-buttons/assets/styles/share-buttons.css",
+        "../../plugins/wp-biographia/css/wp-biographia.css"
       ],
       "main": true
     },
@@ -31,6 +32,6 @@
     }
   },
   "config": {
-    "devUrl": "example.dev"
+    "devUrl": "ado.dev"
   }
 }
