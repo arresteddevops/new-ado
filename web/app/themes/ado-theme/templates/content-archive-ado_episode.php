@@ -2,7 +2,7 @@
       yoast_breadcrumb('<p id="breadcrumbs">','</p>');
     } ?>
 <!-- trying the wrapper -->
-
+<div id="wrapper">
 <div id = "list">
 <?php while (have_posts()) : the_post(); ?>
 
@@ -35,4 +35,5 @@
       </div>
   </article>
 <?php endwhile; ?>
+</div>
 </div>
