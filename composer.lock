@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "38bb4e71d1574ceee0d9919636e3925c",
+    "hash": "2a7aff7218db9281a0ae579ab5244bf8",
     "packages": [
         {
             "name": "arresteddevops/ado-plugin",
@@ -281,7 +281,7 @@
         },
         {
             "name": "wpackagist-plugin/cmb2",
-            "version": "2.0.2",
+            "version": "2.0.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/cmb2/",

@@ -72,7 +72,7 @@
     "wpackagist-plugin/safe-redirect-manager": "*",
     "wpackagist-plugin/custom-search-plugin": "*",
     "wpackagist-plugin/regenerate-thumbnails": "*"
-  },
+    },
   "extra": {
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
