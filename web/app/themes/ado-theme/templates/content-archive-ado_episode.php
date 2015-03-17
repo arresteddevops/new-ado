@@ -1,6 +1,3 @@
-  <?php if ( function_exists('yoast_breadcrumb') ) {
-      yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-    } ?>
 <!-- trying the wrapper -->
 <div id="wrapper">
 <div id = "list">
