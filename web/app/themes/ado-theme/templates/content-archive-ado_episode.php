@@ -27,9 +27,6 @@
   <?php endif ?>
   <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'episode-archive-thumb' ); ?>
   <img src = "<?php echo $image[0]; ?>">
-    <?php if ($wp_query->current_post < 1) { ?>
-    first post
-    <?php } ?>
 
       <a href="<?php echo get_permalink( $post_id ); ?>"><h2 class="entry-title"><?= $episode_title ?></a></h2>
     
