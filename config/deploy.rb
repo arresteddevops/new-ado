@@ -1,5 +1,5 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'ado'
+set :repo_url, 'git@github.com:arresteddevops/new-ado.git'
 
 # Branch options
 # Prompts for the branch name (defaults to current branch)
@@ -9,18 +9,30 @@ set :repo_url, 'git@example.com:me/my_repo.git'
 # This could be overridden in a stage config file
 set :branch, :master
 
-set :deploy_to, -> { "/srv/www/#{fetch(:application)}" }
+set :deploy_to, -> { "/usr/share/nginx/html/#{fetch(:application)}" }
 
 # Use :debug for more verbose output when troubleshooting
-set :log_level, :info
+set :log_level, :debug
 
-set :theme_path, -> { release_path.join('web/app/themes/ado-theme') }
+set :theme_path, -> { "#{fetch(:release_path)}/web/app/themes/ado-theme/" }
+
+
 # npm stuff
-set :npm_target_path, fetch(:theme_path)
+# set :npm_target_path, fetch(:theme_path)
+set :npm_target_path, -> { "#{fetch(:release_path)}/web/app/themes/ado-theme/" }
+set :npm_flags, '--silent --no-spin'
 
-# gulp stufff
-set :gulp_file, -> { theme_path.join('/gulpfile.js') }
+# gulp stuff
+#SSHKit.config.command_map[:gulp] = "./node_modules/gulp/bin/gulp.js"
+#set :gulp_executable, '/usr/share/nginx/html/ado/current/web/app/themes/ado-theme/node_modules/gulp/bin/gulp.js'
+#set :gulp_file, "/usr/share/nginx/html/ado/current/web/app/themes/ado-theme/gulpfile.js"
+set :gulp_target_path, -> { fetch(:theme_path) }
 set :gulp_flags, '--no-production'
+
+# bower stuff
+
+set :bower_target_path, -> { fetch(:theme_path) }
+set :bower_bin, :bower
 
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
