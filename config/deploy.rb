@@ -14,6 +14,14 @@ set :deploy_to, -> { "/srv/www/#{fetch(:application)}" }
 # Use :debug for more verbose output when troubleshooting
 set :log_level, :info
 
+set :theme_path, -> { release_path.join('web/app/themes/ado-theme') }
+# npm stuff
+set :npm_target_path, fetch(:theme_path)
+
+# gulp stufff
+set :gulp_file, -> { theme_path.join('/gulpfile.js') }
+set :gulp_flags, '--no-production'
+
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
 # set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
@@ -54,6 +62,9 @@ namespace :deploy do
     end
   end
 end
+
+
+before 'deploy:updated', 'gulp'
 
 # The above update_option_paths task is not run by default
 # Note that you need to have WP-CLI installed on your server
