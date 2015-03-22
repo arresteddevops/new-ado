@@ -41,3 +41,4 @@ bin
 # Extra junk
 .DS_Store
 .bundle
+Gemfile.lock
