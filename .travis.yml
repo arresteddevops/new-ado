@@ -12,14 +12,12 @@ env:
 before_install:
   - pyrus install pear/PHP_CodeSniffer
   - phpenv rehash
-  - npm install bower
-  - npm install gulp
+  - npm install -g gulp bower
   - bundle install
 
 install: 
   - composer install --no-dev --no-scripts --quiet --optimize-autoloader
   - cd $THEME_DIR
-  - echo $PWD
   - npm install --devDependencies --silent --no-spin
   - bower install
   - gulp --production
