@@ -8,6 +8,11 @@ php:
 before_install:
   - pyrus install pear/PHP_CodeSniffer
   - phpenv rehash
+  - npm install bower
+  - npm install gulp
+
+install: 
+  - gulp --production --cwd web/app/themes/ado-theme/
 
 script:
   - phpcs --standard=ruleset.xml --extensions=php --ignore=web/wp/,vendor/ -n -s .
