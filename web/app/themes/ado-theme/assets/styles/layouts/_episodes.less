@@ -1,42 +1,33 @@
 // Episode stuff
 
-.wrap
+.episode_grid
 {
-  margin-top: -20px;
-  width: 103.125%;
+    max-width: 103.125%;
+    margin: -20px auto 0px auto;
 }
-#wrapper
+.item
 {
-    max-width: 60em; /* 960 px */
-    margin: 0 auto;
+    width: 30.303%;
+    float: left;
+    margin: 0 0 0 0;
+    max-width: 600px;
+    max-height: 800px;
 }
-    #list
-    {
-        width: 103.125%; /* 990px */
-        overflow: hidden;
-        margin-left: -1.562%; /* 15px */
-        margin-bottom: -1.875em; /* 30px */
-    }
-        .item
-        {
-            width: 30.303%; /* 300px */
-            float: left;
-            margin: 0 1.515% 1.875em; /* 15px 30px */
-            height: 500px;
-        }
-        .item-first
-        {
-            width: 103.125%%; /* 300px */
-            float: left;
-            margin: 0 1.515% 1.875em; /* 15px 30px */
-            background-color: @navbar-default-bg;
-        }
+.item:first-child
+{
+    width: 103.125%;
+    float: left;
+    padding: 30px 30px 30px 30px;
+    background-color: @navbar-default-link-color;
+    max-width: 103.125%;
+}
 
-        .summary
-        {
-        max-height: 400px;
-        }
- 
+.summary
+{
+max-height: 400px;
+overflow: hidden;
+}
+
 @media only screen and ( max-width: 40em ) /* 640px */
 {
     .item

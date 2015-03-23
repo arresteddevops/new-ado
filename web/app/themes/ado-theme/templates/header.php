@@ -10,7 +10,6 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><img src="<?= get_template_directory_uri(); ?>/dist/images/ado-logo.png" width = "259px" height "100px"alt="ADO Logo"></a>
-      <?php get_search_form(); ?>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
@@ -18,6 +17,7 @@
       if (has_nav_menu('primary_navigation')) :
         wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new Nav\SageNavWalker(), 'menu_class' => 'nav navbar-nav']);
       endif;
+      get_search_form();
       ?>
     </nav>
   </div>
