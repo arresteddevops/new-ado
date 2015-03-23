@@ -1,7 +1,7 @@
-# [Bedrock](http://roots.io/wordpress-stack/)
-[![Build Status](https://travis-ci.org/roots/bedrock.svg)](https://travis-ci.org/roots/bedrock)
+# Arrested DevOps
+[![Build Status](https://travis-ci.org/arresteddevops/new-ado.svg?branch=master)](https://travis-ci.org/arresteddevops/new-ado)
 
-Bedrock is a modern WordPress stack that helps you get started with the best development tools and project structure.
+The ADO Web application is build on Bedrock, a modern WordPress stack that helps you get started with the best development tools and project structure.
 
 # ToC
 
