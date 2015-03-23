@@ -10,7 +10,6 @@ before_install:
   - phpenv rehash
   - npm install bower
   - npm install gulp
-  - npm install 
 
 install: 
   - composer install --no-dev --no-scripts --quiet --optimize-autoloader
