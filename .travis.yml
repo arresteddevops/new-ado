@@ -14,7 +14,7 @@ before_install:
 
 install: 
   - composer install --no-dev --no-scripts --quiet --optimize-autoloader
-  - npm install --devDependencies --silent --no-spin -p ./web/app/themes/ado-theme/
+  - npm install --devDependencies -p ./web/app/themes/ado-theme/
   - bower install --config.cwd="./web/app/themes/ado-theme/"
   - gulp --production --cwd ./web/app/themes/ado-theme/
 
