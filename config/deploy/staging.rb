@@ -8,7 +8,7 @@ set :stage, :staging
 
 # Extended Server Syntax
 # ======================
-server 'localhost', user: 'deploy', roles: %w{web app db}, port: 2200
+server 'ado-web-toss.cloudapp.net', user: 'deploy', roles: %w{web app db}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
@@ -17,7 +17,6 @@ server 'localhost', user: 'deploy', roles: %w{web app db}, port: 2200
   set :ssh_options, {
 #    keys: %w(~/.ssh/id_rsa),
 #    forward_agent: false,
-    port: 2200
     #auth_methods: %w(password)
   }
 

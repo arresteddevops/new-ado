@@ -20,7 +20,8 @@ set :theme_path, -> { "#{fetch(:release_path)}/web/app/themes/ado-theme/" }
 # npm stuff
 # set :npm_target_path, fetch(:theme_path)
 set :npm_target_path, -> { "#{fetch(:release_path)}/web/app/themes/ado-theme/" }
-set :npm_flags, '--silent --no-spin'
+set :npm_flags, '--verbose --no-spin'
+# set :npm_flags, '--silent --no-spin'
 
 # gulp stuff
 #SSHKit.config.command_map[:gulp] = "./node_modules/gulp/bin/gulp.js"
@@ -45,14 +46,15 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
-      # execute :service, :nginx, :reload
+      # execute '/usr/sbin/service', 'nginx', 'reload'
+      # execute '/usr/sbin/service', 'php5-fpm', 'restart'
     end
   end
 end
 
 # The above restart task is not run by default
 # Uncomment the following line to run it on deploys if needed
-# after 'deploy:publishing', 'deploy:restart'
+after 'deploy:publishing', 'deploy:restart'
 
 namespace :deploy do
   desc 'Update WordPress template root paths to point to the new release'
@@ -76,7 +78,7 @@ namespace :deploy do
 end
 
 
-before 'deploy:updated', 'gulp'
+# before 'deploy:updated', 'gulp'
 
 # The above update_option_paths task is not run by default
 # Note that you need to have WP-CLI installed on your server
